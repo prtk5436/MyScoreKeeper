@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
+        android:baselineAligned="false"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -27,19 +28,19 @@
                 android:layout_marginTop="20dp"
 
                 android:layout_marginBottom="20dp"
-                android:text="TEAM A"
+                android:text="@string/team_a"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="35sp" />
 
             <TextView
-                android:id="@+id/tv_score"
+                android:id="@+id/tv_score_A"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:fontFamily="cursive"
-                android:text="0"
+                android:text="@string/_0"
                 android:textColor="@android:color/holo_orange_dark"
                 android:textSize="30sp">
 
@@ -53,7 +54,7 @@
                 android:layout_marginBottom="20dp"
                 android:background="@color/colorAccent"
                 android:onClick="addOne"
-                android:text="@string/_1_point"></Button>
+                android:text="@string/_1_point" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -63,7 +64,7 @@
 
                 android:background="@color/colorAccent"
                 android:onClick="addThree"
-                android:text="@string/_3_point"></Button>
+                android:text="@string/_3_point" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -72,7 +73,7 @@
                 android:layout_marginBottom="20dp"
                 android:background="@color/colorAccent"
                 android:onClick="addFive"
-                android:text="@string/_5_point"></Button>
+                android:text="@string/_5_point" />
         </LinearLayout>
 
         <LinearLayout
@@ -89,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:text="TEAM B"
+                android:text="@string/team_b"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="35sp" />
 
@@ -100,7 +101,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:fontFamily="cursive"
-                android:text="0"
+                android:text="@string/_0"
                 android:textColor="@android:color/holo_orange_dark"
                 android:textSize="30sp">
 
@@ -112,9 +113,8 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:background="@color/colorAccent"
-
                 android:onClick="B_addOne"
-                android:text="+ 1  point"></Button>
+                android:text="@string/_1_point" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -123,7 +123,7 @@
                 android:layout_marginBottom="20dp"
                 android:background="@color/colorAccent"
                 android:onClick="B_addThree"
-                android:text="+ 3  point"></Button>
+                android:text="@string/_3_point" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -132,7 +132,7 @@
                 android:layout_marginBottom="20dp"
                 android:background="@color/colorAccent"
                 android:onClick="B_addFive"
-                android:text="+ 5  point"></Button>
+                android:text="@string/_1_point" />
 
         </LinearLayout>
     </LinearLayout>
@@ -147,6 +147,6 @@
         android:onClick="reset"
         android:text="@string/reset"
         android:textColor="@android:color/primary_text_dark"
-        android:textSize="25sp"></Button>
+        android:textSize="25sp" />
 
 </RelativeLayout>
